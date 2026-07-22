@@ -9,6 +9,9 @@ brew trust pmuston/reshape   # required for third-party taps
 brew install reshape-cli
 ```
 
+**Docs:** <https://pmuston.github.io/reshape-cli> · after installing, `man
+reshape-cli` has the same reference offline.
+
 > The installed binary is `reshape-cli`: homebrew/core already ships an
 > unrelated `reshape` (a Postgres migration tool), so this one takes the
 > `-cli` suffix to keep the install name unambiguous.
