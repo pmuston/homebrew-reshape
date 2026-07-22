@@ -9,6 +9,12 @@ brew trust pmuston/reshape   # required for third-party taps
 brew install reshape-cli
 ```
 
+On Linux or without a package manager:
+
+```bash
+curl -fsSL https://pmuston.github.io/install.sh | sh -s reshape-cli
+```
+
 **Docs:** <https://pmuston.github.io/reshape-cli> · after installing, `man
 reshape-cli` has the same reference offline.
 
