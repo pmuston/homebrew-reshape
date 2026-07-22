@@ -1,33 +1,34 @@
 class ReshapeCli < Formula
   desc "Convert tabular records between JSON, JSONL and CSV"
   homepage "https://github.com/pmuston/homebrew-reshape"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.1/reshape-cli-v0.1.1-darwin-arm64.tar.gz"
-      sha256 "cd52ea7d4665c5393c7f0b1d07c563216610102f26a69c3f422b5da426878c33"
+      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.2/reshape-cli-v0.1.2-darwin-arm64.tar.gz"
+      sha256 "298d01f109146bf5e0c6bfd9585322028171be7e0b77a04cae34905c9e34fd9e"
     end
     on_intel do
-      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.1/reshape-cli-v0.1.1-darwin-amd64.tar.gz"
-      sha256 "800910d9208815570491571323bcfba80d55dc655d5a24aec7eb9b773f65c221"
+      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.2/reshape-cli-v0.1.2-darwin-amd64.tar.gz"
+      sha256 "05f499be942727cb586f2fc66c782fde6728d30c1a90cc96e1c83977ad435c7f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.1/reshape-cli-v0.1.1-linux-arm64.tar.gz"
-      sha256 "a0e99e84c19aa6f46525a24504225a96efd755773f7f30b96e1e0ffe9d497d56"
+      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.2/reshape-cli-v0.1.2-linux-arm64.tar.gz"
+      sha256 "f25b95fd869ce11044870a608530c4052634cf535923c1f638a425efc483d073"
     end
     on_intel do
-      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.1/reshape-cli-v0.1.1-linux-amd64.tar.gz"
-      sha256 "f1d86d2c412f4b49e891e5d06a8d3e7ff5f39ac9114ca9588feadf68409e97ef"
+      url "https://github.com/pmuston/homebrew-reshape/releases/download/v0.1.2/reshape-cli-v0.1.2-linux-amd64.tar.gz"
+      sha256 "9b974d00bcd3bdfb5bccdf6225ec504ee03b6792e8522acc58d587f38962a4f6"
     end
   end
 
   def install
     bin.install "reshape-cli"
+    man1.install "reshape-cli.1"
   end
 
   test do
